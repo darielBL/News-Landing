@@ -1,0 +1,259 @@
+/*------------
+     Colors
+  ------------*/
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/*------------
+   Fonts
+------------*/
+:root {
+    --font-light: 'Inter-light';
+    --font-regular: 'Inter-regular';
+    --font-bold: 'Inter-bold';
+}
+
+@font-face {
+    font-family: 'Inter-light';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 300;
+    /* Peso ligero */
+}
+
+@font-face {
+    font-family: 'Inter-regular';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 400;
+    /* Peso regular */
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 700;
+    /* Peso negrita */
+}
+
+body {
+    font-family: var(--font-regular);
+
+}
+
+h1 {
+    font-family: var(--font-bold);
+}
+
+p {
+    font-family: var(--font-light);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    font-size: 15px;
+}
+
+.blue-dark-font {
+    color: var(--Very-dark-blue);
+}
+
+.blue-light-font {
+    color: var(--Dark-grayish-blue);
+}
+
+
+.title-card {
+    font-family: var(--font-bold);
+    font-size: 2rem;
+    color: var(--Soft-orange);
+
+}
+
+/*-------------------
+    Cards
+--------------------*/
+.card {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    border: none !important;
+
+}
+
+#card1 {
+    padding: 0 !important;
+}
+
+#card2 {
+    color: var(--Very-dark-blue);
+}
+
+#card2 h1 {
+    font-size: 2.8rem;
+}
+
+#card3 {
+
+    color: var(--Dark-grayish-blue);
+
+}
+
+#card3 p {
+    margin-bottom: 30px !important;
+    font-size: 110%;
+    align-content: center;
+}
+
+#card3 a {
+    background-color: var(--Soft-red);
+    color: var(--Very-dark-blue);
+    letter-spacing: 4px;
+    font-family: var(--font-bold);
+    padding: 4% !important;
+    width: 53%;
+    text-decoration: none;
+}
+#card3 a:hover{
+    background-color: var(--Dark-grayish-blue);
+    color: var(--Off-white);
+}
+
+#card4 {
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    padding: 5%;
+    margin-bottom: 20px;
+
+}
+
+.mini-card {
+    padding: 10% 0 !important;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.mini-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+}
+
+.mini-card p {
+    color: var(--Grayish-blue);
+    margin-top: 10px !important;
+    font-family: var(--font-lightr);
+    font-size: 110% !important;
+}
+
+.subtitle-card {
+    font-size: 130% !important;
+    font-family: var(--font-bold);
+}
+.subtitle-card:hover {
+
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+.no-pad-lft {
+    padding-left: 0 !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.numbered-article {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img1 {
+    width: 25%;
+}
+
+.numbered-article .subtitle-card {
+    font-size: large;
+}
+.numbered-article .subtitle-card:hover{
+    color: var(--Soft-red);
+    
+}
+
+.offcanvas {
+    width: 65% !important;
+}
+
+.offcanvas .navbar-nav {
+    padding: 10%;
+    font-family: var(--font-regular);
+    color: var(--Dark-grayish-blue);
+
+}
+
+.offcanvas .navbar-nav .nav-link {
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .img-mobile {
+        display: block;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+
+        display: block;
+    }
+
+    .mini-card p {
+
+        font-size: 90%;
+    }
+
+    .subtitle-card {
+        font-size: 110% !important;
+
+    }
+
+
+}
+
+@media (min-width: 1010px) {
+
+    .mini-card p {
+
+        font-size: 100%;
+    }
+
+    .subtitle-card {
+        font-size: 120% !important;
+
+    }
+
+
+}
